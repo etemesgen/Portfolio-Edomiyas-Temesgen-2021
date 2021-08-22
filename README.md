@@ -1,24 +1,9 @@
-# portfolio-edomiyas-temesgen-2021
+# Portfolio Edomiyas Temesgen
 
-## Project setup
-```
-npm install
-```
+## Here's my new portfolio 2k21
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+link
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Technology
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+![Vue.js](https://img.shields.io/badge/vuejs-%2335495e.svg?style=for-the-badge&logo=vuedotjs&logoColor=%234FC08D)
