@@ -4,11 +4,11 @@
     <button id="hamburger" class="flex text-green-200 text-3xl ml-80 -mt-7 lg:hidden" v-on:click="toggleNavbar()">
       <i class="fa fa-bars"></i>
     </button>
-    <nav v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="text-green-200 text-xl mt-4 flex-col items-center lg:inline">
-      <NavLinks url="#" text="Home" class="hover:text-black lg:flex-row hover:text-white"/>
-      <NavLinks url="#" text="About me" class="hover:text-black lg:flex-row hover:text-white"/>
-      <NavLinks url="#" text="Projects" class="hover:text-black lg:flex-row hover:text-white"/>
-      <NavLinks url="#" text="Contact me" class="hover:text-black lg:flex-row hover:text-white"/>
+    <nav v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="text-green-200 text-xl mt-4 flex-col lg:inline text-center space-x-14 md:ml-72">
+      <NavLinks url="#" text="Home" class="ml-12 hover:text-white"/>
+      <NavLinks url="#" text="About me" class="hover:text-white"/>
+      <NavLinks url="#" text="Projects" class="hover:text-white"/>
+      <NavLinks url="#" text="Contact me" class="hover:text-white"/>
     </nav>
     <div id="social-media" class="flex justify-end space-x-4 -mt-7 mr-10">
       <a href="#"><img :src="image"  alt="linkedin" id="linkedin" class="hidden max-w-full w-7 lg:flex"></a>
@@ -17,9 +17,9 @@
       <p id="githubtext" class="hidden text-white mt-1 lg:flex">GitHub</p>
     </div>
     <p id="dev" class="bg-green-200 w-56 p-1 font-bold text-xl text-center ml-16 mt-28 rounded lg:ml-36">Full-Stack Developer</p>
-    <p class="text-white text-xl mr-4 mt-7 lg:text-3xl ml-36">If you never failed,</p>
-    <p class="text-white text-xl lg:text-3xl ml-72">you never tried anything new.</p>
-    <img class="w-32 lg:w-48 float-right mr-52 -mt-36" :src="me" alt="me">  <!-- Mobile first responsive, define mobile size by default-->
+    <img class="flex w-40 mr-36 mt-14 lg:w-48 float-right md:-mt-10" :src="me" alt="me">  <!-- Mobile first responsive, define mobile size by default-->
+    <p class="flex text-white text-xl font-bold mt-96 ml lg:flex text-3xl ml-36 -mt-0 mb-2">If you never failed,</p>
+    <p class="flex text-white text-xl font-bold lg:text-3xl ml-72">you never tried anything new.</p>
   </div>
 </template>
 
