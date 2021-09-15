@@ -1,12 +1,13 @@
 <template> 
   <div id="app" class="flex-1">
-    <p id="title" class="text-white text-xl mt-9 ml-8">Edomiyas <strong>Temesgen</strong></p>
-    <button id="hamburger" class="flex text-green-200 text-3xl ml-80 -mt-7 lg:hidden" v-on:click="toggleNavbar()">
+    <p id="title" class="text-white text-xl mt-9 ml-4">Edomiyas <strong>Temesgen</strong></p>
+    <button id="hamburger" class="flex text-green-200 text-3xl ml-64 -mt-7 lg:hidden" v-on:click="toggleNavbar()">
       <i class="fa fa-bars"></i>
     </button>
-    <nav v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="text-green-200 text-xl mt-4 flex-col lg:inline text-center space-x-14 md:ml-72">
-      <NavLinks url="#" text="Home" class="ml-12 hover:text-white"/>
+    <nav v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="text-green-200 text-xl flex-col lg:inline text-center space-x-14 md:ml-96 -mt-10">
+      <NavLinks url="#" text="Home" class="-ml-16 mt-12 hover:text-white"/>
       <NavLinks url="#" text="About me" class="hover:text-white"/>
+      <NavLinks url="#" text="CCC" class="hover:text-white"/>
       <NavLinks url="#" text="Projects" class="hover:text-white"/>
       <NavLinks url="#" text="Contact me" class="hover:text-white"/>
     </nav>
@@ -16,9 +17,10 @@
       <a href="#"><img src="./assets/github.png" alt="github" id="github" class="hidden max-w-full w-7 lg:flex"></a>
       <p id="githubtext" class="hidden text-white mt-1 lg:flex">GitHub</p>
     </div>
-    <p id="dev" class="bg-green-200 w-56 p-1 font-bold text-xl text-center ml-16 mt-28 rounded lg:ml-36">Full-Stack Developer</p>
+    <p id="dev" class="bg-green-200 w-56 p-1 font-bold text-xl text-center ml-10 mt-24 rounded lg:ml-36">Full-Stack Developer</p>
     <img class="flex w-40 mr-36 mt-14 lg:w-48 float-right md:-mt-10" :src="me" alt="me">  <!-- Mobile first responsive, define mobile size by default-->
-    <p class="flex text-white text-xl font-bold mt-96 ml lg:flex text-3xl ml-36 -mt-0 mb-2">If you never failed,</p>
+    <br>
+    <p class="text-white text-xl font-bold mt-64 lg:text-3xl">If you never failed,</p>
     <p class="flex text-white text-xl font-bold lg:text-3xl ml-72">you never tried anything new.</p>
   </div>
 </template>
@@ -55,5 +57,4 @@ export default {
 body{
   font-family: 'Rockwell Nova', sans-serif;
 }
-
 </style>
