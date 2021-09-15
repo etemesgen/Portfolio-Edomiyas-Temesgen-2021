@@ -18,7 +18,7 @@
       <p id="githubtext" class="hidden text-white mt-1 lg:flex">GitHub</p>
     </div>
     <p id="dev" class="bg-green-200 w-56 p-1 font-bold text-xl text-center ml-10 mt-24 rounded lg:ml-36">Full-Stack Developer</p>
-    <img class="flex w-40 mr-36 mt-14 lg:w-48 float-right md:-mt-10" :src="me" alt="me">  <!--Mobile first responsive, define mobile size by default-->
+    <img class="flex w-40 mr-36 mt-14 lg:w-48 float-right md:-mt-10" :src="me" alt="me">  <!-- Mobile first responsive, define mobile size by default -->
     <br>
     <p class="text-white text-xl font-bold mt-64 lg:text-3xl">If you never failed,</p>
     <p class="flex text-white text-xl font-bold lg:text-3xl ml-72">you never tried anything new.</p>
