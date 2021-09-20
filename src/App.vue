@@ -48,6 +48,8 @@
     <div class="grid">
       <div class="bg-gray-500 h-24 w-72 ml-10 mt-10" id="grid1">
         <p class="text-green-200 ml-4 mt-2" id="front">Front-End</p>
+        <img class="w-10 ml-3 mt-2" src="./assets/html.png" alt="html" id="html">
+        <img class="w-6 ml-16 -mt-9" src="./assets/CSS3.png" alt="css" id="css">
       </div>
       <div class="bg-gray-500 h-24 w-72 ml-10 mt-10" id="grid2">
         <p class="text-green-200 ml-4 mt-2" id="back">Back-End</p>
@@ -115,6 +117,10 @@ body{
   font-family: 'Rockwell Nova', sans-serif;
 }
 
+#css{
+  margin-top: -2.37rem;
+}
+
  @media only screen and (min-width: 1500px) {
     #php{
       display: flex;
@@ -153,6 +159,16 @@ body{
 
     #grid1{
       margin: -12rem 0rem 0rem 7rem;
+    }
+
+    #html{
+      width: 3.5rem;
+      margin: .7rem 0rem 0rem 1rem;
+    }
+    
+    #css{
+      width: 2.2rem;
+      margin: -3.3rem 0rem 0rem 5.5rem;
     }
 
     #grid2{
@@ -216,9 +232,9 @@ body{
 
     #programming{
       display: flex;
-      width: 2.5rem;
+      width: 3rem;
       position: absolute;
-      margin: 2.5rem 0rem 0rem 63.7rem;
+      margin: 2.1rem 0rem 0rem 63.7rem;
     }
   }
 </style>
