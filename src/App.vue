@@ -1,34 +1,36 @@
 <template> 
   <div id="app" class="flex-1">
-    <p id="title" class="flex absolute text-white text-xl ml-7">Edomiyas &nbsp;<strong>Temesgen</strong></p>
+    <!-- Home page -->
+    <p id="title" class="flex absolute text-white text-xl ml-7 transition duration-500 ease-in-out hover:bg-green-600 text-grey-200 rounded-sm transform hover:-translate-y-1 hover:scale-110">Edomiyas &nbsp;<strong>Temesgen</strong></p>
     <button id="hamburger" class="flex text-green-200 text-3xl ml-80 mt-10 lg:hidden" v-on:click="toggleNavbar()">
       <i class="fa fa-bars"></i>
     </button>
     <nav v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="text-green-200 text-xl grid mt-12 lg:flex inline text-center space-x-14 -ml-20 md:ml-96">
-      <NavLinks url="#" text="Home" class="ml-14 hover:text-white"/>
-      <NavLinks url="#hello" text="About me" class="hover:text-white"/>
-      <NavLinks url="#" text="CCC" class="hover:text-white"/>
-      <NavLinks url="#" text="Projects" class="hover:text-white"/>
-      <NavLinks url="#" text="Contact me" class="hover:text-white"/>
+      <NavLinks url="#" text="Home" class="ml-14 transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
+      <NavLinks url="#hello" text="About me" class="transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
+      <NavLinks url="#" text="CCC" class="transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
+      <NavLinks url="#" text="Projects" class="transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
+      <NavLinks url="#" text="Contact me" class="transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
     </nav>
     <div id="social-media" class="flex justify-end space-x-4 -mt-7 mr-10">
       <a href="#"><img :src="image"  alt="linkedin" id="linkedin" class="hidden max-w-full w-7 lg:flex"></a>
-      <p id="linkedintext" class="hidden text-white mt-1 lg:flex">LinkedIn</p>
+      <p id="linkedintext" class="hidden text-white mt-1 lg:flex hover:text-blue-200">LinkedIn</p>
       <a href="#"><img src="./assets/github.png" alt="github" id="github" class="hidden max-w-full w-7 lg:flex"></a>
-      <p id="githubtext" class="hidden text-white mt-1 lg:flex">GitHub</p>
+      <p id="githubtext" class="hidden text-white mt-1 lg:flex hover:text-gray-200">GitHub</p>
     </div>
-    <p id="dev" class="bg-green-200 w-56 p-1 font-bold text-xl text-center ml-16 rounded lg:ml-36 w-60 mt-24 md:mt-36">Full-Stack Developer</p>
-    <img class="flex w-10 ml-72 mt-14 lg:float-right mr-24 md:-mt-7" src="./assets/javascript.png" alt="javascript">
-    <img class="flex w-40 -mt-10 ml-24 lg:w-48 md:float-right -mr-52" :src="me" alt="me">  <!-- Mobile first responsive, define mobile size by default -->
-    <img class="flex w-20 ml-7" src="./assets/php.png" alt="php" id="php">
-    <img class="flex w-32 ml-56 -mt-8" src="./assets/vue.png" alt="vue" id="vue">
+    <p id="dev" class="bg-green-200 w-56 p-1 font-bold text-xl text-center ml-16 rounded transition duration-500 ease-in-out hover:bg-yellow-200 text-grey-200 rounded-sm transform hover:-translate-y-1 hover:scale-110 lg:ml-36 w-60 mt-24 md:mt-36">Full-Stack Developer</p>
+    <img class="flex w-10 ml-72 mt-14 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 lg:float-right mr-24 md:-mt-7" src="./assets/javascript.png" alt="javascript">
+    <img class="flex w-40 -mt-10 ml-24 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 lg:w-48 md:float-right -mr-52" :src="me" alt="me">  <!-- Mobile first responsive, define mobile size by default -->
+    <img class="flex w-20 ml-7 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/php.png" alt="php" id="php">
+    <img class="flex w-32 ml-56 -mt-8 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/vue.png" alt="vue" id="vue">
     <br>
     <p id="quote" class="flex text-white text-xl font-bold ml-3 lg:text-3xl md:-mt-80">If you never failed,</p>
     <p id="quote2" class="flex text-white text-xl font-bold ml-20 lg:text-3xl">you never tried anything new.</p>
     <p class="hidden lg:flex ml-36 mt-10 text-gray-300">I love creating interfaces, coding and pretty much learning new things.</p>
-    <a href=""><p id="contact" class="text-center mt-10 text-xl text-green-200 underline lg:flex md:ml-36">LET'S CHAT !</p></a>
-    <a href="#hello"><img class="w-8 m-auto mt-10 lg:w-12" src="./assets/scroll.png" alt="scroll" id="scroll"></a>
+    <a href="" id="chat"><p class="text-center mt-10 text-xl text-green-200 hvr-underline-from-center hover:text-yellow-200 lg:flex md:ml-36">LET'S CHAT !</p></a><br>
+    <a href="#grid1"><img class="animate-bounce w-8 m-auto mt-10 lg:w-12" src="./assets/scroll.png" alt="scroll" id="scroll"></a>
 
+    <!-- Second page -->
 
     <p class="text-3xl mt-24 text-center lg:hidden">👋🏽</p>
     <br>
@@ -42,36 +44,73 @@
       i work to succeed using my passion for living.</p>
 
     <img class="absolute w-14 -mt-48 ml-20" src="./assets/problem-solving.png" alt="problem solving" id="problem-solving">
-    <img class="absolute w-9 -mt-44 ml-40" src="./assets/right-arrow.png" alt="right-arrow" id="right-arrow">
+    <img class="absolute w-9 -mt-44 ml-40 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/right-arrow.png" alt="right-arrow" id="right-arrow">
     <img class="absolute w-14 -mt-48 ml-60" src="./assets/web-programming.png" alt="programming" id="programming">
 
     <div class="grid">
-      <div class="bg-gray-500 h-24 w-72 ml-10 mt-10" id="grid1">
+      <div class="bg-gray-500 h-24 w-72 ml-10 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" id="grid1">
         <p class="text-green-200 ml-4 mt-2" id="front">Front-End</p>
-        <img class="w-10 ml-3 mt-2" src="./assets/html.png" alt="html" id="html">
-        <img class="w-6 ml-16 -mt-9" src="./assets/CSS3.png" alt="css" id="css">
+        <img class="w-10 ml-1 mt-2" src="./assets/html.png" alt="html" id="html">
+        <img class="w-6 ml-14 -mt-9" src="./assets/CSS3.png" alt="css" id="css">
+        <img class="w-9 -mt-8" src="./assets/tailwind.png" alt="tailwind" id="tailwind">
+        <img class="w-7" src="./assets/javascript.png" alt="javascript" id="javascript2">
+        <img src="./assets/vue.png" alt="vue" id="vue2">
+        <img class="w-8" src="./assets/chartjs.png" alt="vue" id="chartjs">
       </div>
-      <div class="bg-gray-500 h-24 w-72 ml-10 mt-10" id="grid2">
+      <div class="bg-gray-500 h-24 w-72 ml-10 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" id="grid2">
         <p class="text-green-200 ml-4 mt-2" id="back">Back-End</p>
+        <img class="w-10 ml-4 mt-3" src="./assets/php.png" alt="php" id="php2">
+        <img class="w-8 ml-24 -mt-7" src="./assets/python.png" alt="python" id="python">
+        <img class="w-14 -mt-10 ml-40" src="./assets/java.png" alt="java" id="java">
       </div>
-      <div class="bg-gray-500 h-24 w-72 ml-10 mt-10" id="grid3">
+      <div class="bg-gray-500 h-24 w-72 ml-10 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" id="grid3">
         <p class="text-green-200 ml-4 mt-2" id="db">Database</p>
+        <img class="w-16 ml-4 mt-1" src="./assets/mysql.png" alt="mysql" id="mysql">
+        <img class="w-12 -mt-12 ml-28" src="./assets/mongodb.png" alt="mongodb" id="mongodb">
       </div>
-      <div class="bg-gray-500 h-24 w-72 ml-10 mt-10" id="grid4">
+      <div class="bg-gray-500 h-24 w-72 ml-10 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" id="grid4">
         <p class="text-green-200 ml-4 mt-2" id="devops">DevOps</p>
+        <img class="w-10 mt-2 ml-6" src="./assets/docker.png" alt="docker" id="docker">
       </div>
-      <div class="bg-gray-500 h-24 w-72 ml-10 mt-10" id="grid5">
+      <div class="bg-gray-500 h-24 w-72 ml-10 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" id="grid5">
         <p class="text-green-200 ml-4 mt-2" id="ui">UI/UX Design</p>
+        <img class="w-7 ml-6 mt-3" src="./assets/figma.png" alt="figma" id="figma">
+        <img class="w-9 -mt-8 ml-20" src="./assets/adobexd.png" alt="adobexd" id="adobexd">
       </div>
-       <div class="bg-gray-500 h-24 w-72 ml-10 mt-10" id="grid6">
+       <div class="bg-gray-500 h-24 w-72 ml-10 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" id="grid6">
         <p class="text-green-200 ml-4 mt-2" id="vs">Version Control</p>
+        <img class="w-12 mt-1 ml-6" src="./assets/git.png" alt="git" id="git">
       </div>
-       <div class="bg-gray-500 h-24 w-72 ml-10 mt-10" id="grid7">
+       <div class="bg-gray-500 h-24 w-72 ml-10 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" id="grid7">
         <p class="text-green-200 ml-4 mt-2" id="mb">Mobile Developement</p>
+        <img class="w-8 mt-2 ml-6" src="./assets/react-native.png" alt="react-native" id="react-native">
       </div>
-       <div class="bg-gray-500 h-24 w-72 ml-10 mt-10" id="grid8">
+      <div class="bg-gray-500 h-24 w-72 ml-10 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" id="grid8">
         <p class="text-green-200 ml-4 mt-2" id="tools">Tools</p>
+        <img class="w-7 ml-4 mt-3" src="./assets/visual.png" alt="visual" id="visual">
+        <img class="w-7 ml-16 -mt-7" src="./assets/eclipse.png" alt="eclipse" id="eclipse">
+        <img class="w-7 -mt-7 ml-28" src="./assets/github.png" alt="github2" id="github2">
+        <img class="w-7 ml-40 -mt-7" src="./assets/wamp.png" alt="wamp" id="wamp">
+        <img class="w-9 -mt-8 ml-52" src="./assets/postman.png" alt="postman" id="postman">
       </div>
+
+    <!-- Third page -->
+    <p id="ccc" class="text-center mt-24 text-3xl text-white transition duration-500 ease-in-out hover:bg-yellow-200 transform hover:-translate-y-1">CCC</p>
+    <div id="curiosity">
+      <h1 class="text-yellow-200 text-2xl">Curiosity</h1>
+      <p class="text-white">is what got me into IT development.</p>
+    </div>
+
+    <div id="creativity">
+      <h1 class="text-green-200 text-2xl">Creativity</h1>
+      <p class="text-white">is what motivates me in my developer adventure.</p>
+    </div>
+
+    <div id="concept">
+      <h1 class="text-blue-400 text-2xl">Concept</h1>
+      <p class="text-white">is what fascinates me about IT development.</p>
+    </div>
+
     </div>
     <br>
     <br>
@@ -121,6 +160,27 @@ body{
   margin-top: -2.37rem;
 }
 
+#tailwind{
+  margin-left: 6rem;
+}
+
+#chartjs{
+  margin-left: 15.5rem;
+}
+
+#javascript2{
+  margin: -2.1rem 0rem 0rem 9.5rem;
+}
+
+#vue2{
+  width: 2.1rem;
+  margin: -1.9rem 0rem 0rem 12.5rem;
+}
+
+#chartjs{
+  margin-top: -2rem;
+}
+
  @media only screen and (min-width: 1500px) {
     #php{
       display: flex;
@@ -133,6 +193,58 @@ body{
       width: 9rem;
       margin: 0rem 0rem 0rem 82rem;
     }
+
+    a::before{
+      content: "";
+      position: absolute;
+      display: block;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background-color: #FDD835;
+      transform: scaleX(0);
+      transition: transform 0.3s ease;
+    }
+
+    a:hover::before{
+      transform: scaleX(1);
+    }
+
+    /* Underline From Center */
+    .hvr-underline-from-center {
+      display: inline-block;
+      vertical-align: middle;
+      -webkit-transform: perspective(.1rem) translateZ(0);
+      transform: perspective(.1rem) translateZ(0);
+      box-shadow: 0 0 .1rem rgba(0, 0, 0, 0);
+      position: relative;
+      overflow: hidden;
+    }
+    
+    .hvr-underline-from-center:before {
+      content: "";
+      position: absolute;
+      z-index: -1;
+      left: 51%;
+      right: 51%;
+      bottom: 0;
+      background: #FDD835;
+      height: .2rem;
+      -webkit-transition-property: left, right;
+      transition-property: left, right;
+      -webkit-transition-duration: 0.3s;
+      transition-duration: 0.3s;
+      -webkit-transition-timing-function: ease-out;
+      transition-timing-function: ease-out;
+    }
+    .hvr-underline-from-center:hover:before,
+    .hvr-underline-from-center:focus:before,
+    .hvr-underline-from-center:active:before {
+      left: 0;
+      right: 0;
+    }
+
 
     #scroll{
       margin: auto;
@@ -163,40 +275,135 @@ body{
 
     #html{
       width: 3.5rem;
-      margin: .7rem 0rem 0rem 1rem;
+      margin: .7rem 0rem 0rem 0.3rem;
     }
     
     #css{
       width: 2.2rem;
-      margin: -3.3rem 0rem 0rem 5.5rem;
+      margin: -3.3rem 0rem 0rem 5.2rem;
+    }
+
+    #tailwind{
+      width: 2.8rem;
+      margin: -3rem 0rem 0rem 9rem;
+    }
+
+    #javascript2{
+      width: 2.5rem;
+      margin: -2.5rem 0rem 0rem 13.5rem;
+    }
+
+    #vue2{
+      width: 2.5rem;
+      margin: -2.5rem 0rem 0rem 17.7rem;
+    }
+
+    #chartjs{
+      width: 2.5rem;
+      margin: -2.5rem 0rem 0rem 21.5rem;
     }
 
     #grid2{
       margin: -2rem 0rem 0rem 7rem;
     }
 
+    #php2{
+      width: 3.5rem;
+      margin: 1rem 0rem 0rem 1rem;
+    }
+
+    #python{
+      width: 2.8rem;
+      margin: -2.4rem 0rem 0rem 7rem;
+    }
+
+    #java{
+      width: 4.5rem;
+      margin: -3.3rem 0rem 0rem 12rem;
+    }
+
     #grid3{
       margin: 2rem 0rem 0rem 7rem;
+    }
+
+    #mysql{
+      width: 4.5rem;
+      margin: 0.5rem 0rem 0rem 1rem;
+    }
+
+    #mongodb{
+      width: 3.5rem;
+      margin: -3.5rem 0rem 0rem 9rem;
     }
 
     #grid4{
       margin: -8rem 0rem 0rem 34rem;
     }
 
+    #docker{
+      width: 3.5rem;
+      margin: 0.5rem 0rem 0rem 1.5rem;
+    }
+
     #grid5{
       margin: -8rem 0rem 0rem 61rem;
+    }
+
+    #figma{
+      width: 2.3rem;
+      margin: 1rem 0rem 0rem 1.5rem;
+    }
+
+    #adobexd{
+      width: 2.7rem;
+      margin: -2.5rem 0rem 0rem 6rem;
     }
 
     #grid6{
       margin: 2rem 0rem 0rem 7rem;
     }
 
+    #git{
+      width: 3.5rem;
+      margin: 0.5rem 0rem 0rem 1.5rem;    
+    }
+
     #grid7{
       margin: -8rem 0rem 0rem 34rem;
     }
 
+    #react-native{
+      width: 3rem;
+      margin: 0.5rem 0rem 0rem 1.5rem; 
+    }
+
     #grid8{
       margin: -8rem 0rem 0rem 61rem;
+    }
+
+    #visual{
+      width: 2.3rem;
+      margin: 1rem 0rem 0rem 1rem;
+    }
+    
+    #eclipse{
+      width: 2.3rem;
+      margin: -2.3rem 0rem 0rem 5.5rem;
+    }
+
+    #github2{
+      width: 2.4rem;
+      margin: -2.5rem 0rem 0rem 10.5rem;
+    }
+
+    #wamp{
+      width: 2.5rem;
+      margin: -2.4rem 0rem 0rem 15.5rem;
+    }
+
+    #postman{
+      width: 3rem;
+      margin: -2.7rem 0rem 0rem 20.5rem;
     }
 
     #hello{
