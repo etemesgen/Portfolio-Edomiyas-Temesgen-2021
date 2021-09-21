@@ -7,8 +7,8 @@
     </button>
     <nav v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="text-green-200 text-xl grid mt-12 lg:flex inline text-center space-x-14 -ml-20 md:ml-96">
       <NavLinks url="#" text="Home" class="ml-14 transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
-      <NavLinks url="#hello" text="About me" class="transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
-      <NavLinks url="#" text="CCC" class="transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
+      <NavLinks url="#br" text="About me" class="transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
+      <NavLinks url="#ccc" text="CCC" class="transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
       <NavLinks url="#" text="Projects" class="transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
       <NavLinks url="#" text="Contact me" class="transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
     </nav>
@@ -27,13 +27,13 @@
     <p id="quote" class="flex text-white text-xl font-bold ml-3 lg:text-3xl md:-mt-80">If you never failed,</p>
     <p id="quote2" class="flex text-white text-xl font-bold ml-20 lg:text-3xl">you never tried anything new.</p>
     <p class="hidden lg:flex ml-36 mt-10 text-gray-300">I love creating interfaces, coding and pretty much learning new things.</p>
-    <a href="" id="chat"><p class="text-center mt-10 text-xl text-green-200 hvr-underline-from-center hover:text-yellow-200 lg:flex md:ml-36">LET'S CHAT !</p></a><br>
-    <a href="#grid1"><img class="animate-bounce w-8 m-auto mt-10 lg:w-12" src="./assets/scroll.png" alt="scroll" id="scroll"></a>
+    <p class="text-center mt-10 text-xl text-green-200 hvr-underline-from-center hover:text-yellow-200 lg:ml-36"><a href="">LET'S CHAT !</a></p><br>
+    <a href="#br"><img class="animate-bounce w-8 m-auto mt-10 lg:w-12" src="./assets/scroll.png" alt="scroll" id="scroll"></a>
 
     <!-- Second page -->
 
     <p class="text-3xl mt-24 text-center lg:hidden">👋🏽</p>
-    <br>
+    <br id="br">
     <p class="text-xl text-center text-white md:text-3xl" id="hello">Hello! &nbsp;I’m Edomiyas Temesgen</p>
     <p class="text-white text-center italic" id="para1">“First, solve the problem. Then, write the code.” – John Johnson</p>
     <br>
@@ -46,7 +46,7 @@
     <img class="absolute w-14 -mt-48 ml-20" src="./assets/problem-solving.png" alt="problem solving" id="problem-solving">
     <img class="absolute w-9 -mt-44 ml-40 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/right-arrow.png" alt="right-arrow" id="right-arrow">
     <img class="absolute w-14 -mt-48 ml-60" src="./assets/web-programming.png" alt="programming" id="programming">
-
+  
     <div class="grid">
       <div class="bg-gray-500 h-24 w-72 ml-10 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" id="grid1">
         <p class="text-green-200 ml-4 mt-2" id="front">Front-End</p>
@@ -95,22 +95,23 @@
       </div>
 
     <!-- Third page -->
-    <p id="ccc" class="text-center mt-24 text-3xl text-white transition duration-500 ease-in-out hover:bg-yellow-200 transform hover:-translate-y-1">CCC</p>
+    <p id="ccc" class="text-center mt-36 text-3xl text-white transition duration-500 ease-in-out hover:bg-yellow-200 transform hover:-translate-y-1">CCC</p>
     <div id="curiosity">
-      <h1 class="text-yellow-200 text-2xl">Curiosity</h1>
-      <p class="text-white">is what got me into IT development.</p>
+      <h1 class="text-center text-2xl mt-20 hvr-underline-from-center" id="cu">Curiosity</h1>
+      <p class="text-center text-xl text-white mt-5" id="cupara">is what got me into IT development.</p>
     </div>
 
     <div id="creativity">
-      <h1 class="text-green-200 text-2xl">Creativity</h1>
-      <p class="text-white">is what motivates me in my developer adventure.</p>
+      <h1 class="text-green-200 text-center text-2xl mt-20 hvr-underline-from-center" id="cr">Creativity</h1>
+      <p class="text-center text-xl text-white mt-5" id="crpara">is what motivates me in my developer adventure.</p>
     </div>
 
     <div id="concept">
-      <h1 class="text-blue-400 text-2xl">Concept</h1>
-      <p class="text-white">is what fascinates me about IT development.</p>
+      <h1 class="text-blue-400 text-center text-2xl mt-20 hvr-underline-from-center" id="co">Concept</h1>
+      <p class="text-center text-xl text-white mt-5" id="copara">is what fascinates me about IT development.</p>
     </div>
 
+    <img class="mt-20 -ml-2 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" id="graph" src="./assets/graph2.png" alt="graph">
     </div>
     <br>
     <br>
@@ -179,6 +180,10 @@ body{
 
 #chartjs{
   margin-top: -2rem;
+}
+
+#cu{
+  color: #FBFF42;
 }
 
  @media only screen and (min-width: 1500px) {
@@ -270,7 +275,7 @@ body{
     }
 
     #grid1{
-      margin: -12rem 0rem 0rem 7rem;
+      margin: -11rem 0rem 0rem 7rem;
     }
 
     #html{
@@ -323,7 +328,7 @@ body{
     }
 
     #grid3{
-      margin: 2rem 0rem 0rem 7rem;
+      margin: 1rem 0rem 0rem 7rem;
     }
 
     #mysql{
@@ -360,7 +365,7 @@ body{
     }
 
     #grid6{
-      margin: 2rem 0rem 0rem 7rem;
+      margin: 1rem 0rem 0rem 7rem;
     }
 
     #git{
@@ -408,7 +413,7 @@ body{
 
     #hello{
       display: flex;
-      margin: 12rem 0rem 9rem 34rem;
+      margin: 4rem 0rem 9rem 34rem;
     }
   
     #para1{
@@ -442,6 +447,21 @@ body{
       width: 3rem;
       position: absolute;
       margin: 2.1rem 0rem 0rem 63.7rem;
+    }
+
+    #cu, #cr, #co{
+      margin: 5rem 0rem 0rem 7rem;
+      text-align: left;
+    }
+
+    #cupara, #crpara, #copara{
+      margin: 2rem 0rem 0rem 10rem;
+      text-align: left;
+    }
+
+    #graph{
+      width: 30rem;
+      margin: -26rem 0rem 0rem 55rem;
     }
   }
 </style>
