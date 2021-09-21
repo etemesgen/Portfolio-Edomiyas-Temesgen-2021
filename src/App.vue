@@ -9,7 +9,7 @@
       <NavLinks url="#" text="Home" class="ml-14 transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
       <NavLinks url="#br" text="About me" class="transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
       <NavLinks url="#ccc" text="CCC" class="transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
-      <NavLinks url="#" text="Projects" class="transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
+      <NavLinks url="#projects" text="Projects" class="transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
       <NavLinks url="#" text="Contact me" class="transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
     </nav>
     <div id="social-media" class="flex justify-end space-x-4 -mt-7 mr-10">
@@ -95,6 +95,7 @@
       </div>
 
     <!-- Third page -->
+
     <p id="ccc" class="text-center mt-36 text-3xl text-white transition duration-500 ease-in-out hover:bg-yellow-200 transform hover:-translate-y-1">CCC</p>
     <div id="curiosity">
       <h1 class="text-center text-2xl mt-20 hvr-underline-from-center" id="cu">Curiosity</h1>
@@ -113,9 +114,50 @@
 
     <img class="mt-20 -ml-2 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" id="graph" src="./assets/graph2.png" alt="graph">
     </div>
-    <br>
-    <br>
-    <br>
+    
+    <!-- Fourth page -->
+
+    <p id="projects" class="text-center mt-36 text-3xl text-white transition duration-500 ease-in-out hover:bg-green-200 transform hover:-translate-y-1">Discover my projects</p>
+    <div id="all-project">
+      <div id="project1">
+      <a href="https://time-display-edo.netlify.app/" target="_blank"><img class="mt-16 w-80 ml-7 rounded transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/timeDisplay.png" alt="timedisplay" id="timedisplay"></a>  
+        <img class="w-14 ml-16 mt-10" src="./assets/html.png" alt="html" id="html2">
+        <img class="w-9" src="./assets/CSS3.png" alt="css" id="css2">
+        <img class="w-9 ml-64 -mt-10" src="./assets/javascript.png" alt="javascript" id="javascript3">
+      </div>
+      <div id="project2">
+        <img class="mt-16 w-80 ml-7 rounded transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/FranceMontagne.png" alt="francemontagne" id="francemontagne">
+        <img class="w-14 ml-16 mt-9" src="./assets/html.png" alt="html" id="html3">
+        <img class="w-9" src="./assets/CSS3.png" alt="css" id="css3">
+        <img class="w-12 ml-64 -mt-10" src="./assets/php.png" alt="php" id="php3">
+      </div>
+      <div id="project3">
+        <img class="mt-16 w-80 ml-7 rounded transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/gmail.jpg" alt="gmail" id="gmail">
+        <img class="w-14 ml-10 mt-9" src="./assets/html.png" alt="html" id="html4">
+        <img class="w-9" src="./assets/CSS3.png" alt="css" id="css4">
+        <img class="w-9 ml-52 -mt-10" src="./assets/javascript.png" alt="javascript" id="javascript4">
+        <img class="w-12 ml-72 -mt-8" src="./assets/php.png" alt="php" id="php4">
+      </div>
+      <div id="project4">
+        <img class="mt-16 w-80 ml-7 rounded transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/Interfaceadmingestionclient.png" alt="interfaceadmin" id="interfaceadmin">
+        <img class="w-14 ml-10 mt-9" src="./assets/html.png" alt="html" id="html5">
+        <img class="w-9" src="./assets/CSS3.png" alt="css" id="css5">
+        <img class="w-12 ml-52 -mt-9" src="./assets/php.png" alt="php" id="php5">
+        <img class="w-16 ml-72 -mt-10" src="./assets/mysql.png" alt="mysql" id="mysql2">
+      </div>
+      <div id="project5">
+        <img class="mt-16 w-80 ml-7 rounded transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/GestionPersonnel.png" alt="gestionpersonnel" id="gestionpersonnel">
+        <img class="w-20 ml-36 mt-4" src="./assets/java.png" alt="java" id="java2">
+      </div>
+      <div id="project6">
+        <a href="https://tip-calculator-app-edo.vercel.app/" target="_blank"><img class="mt-16 w-80 ml-7 rounded transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/tipcalculator.png" alt="tipcalculator" id="tipcalculator"></a>  
+        <img class="w-14 ml-16 mt-10" src="./assets/html.png" alt="html" id="html6">
+        <img class="w-9" src="./assets/CSS3.png" alt="css" id="css6">
+        <img class="w-9 ml-64 -mt-10" src="./assets/javascript.png" alt="javascript" id="javascript5">
+      </div>
+
+      <p class="ml-28 mt-20 text-xl text-green-200 hvr-underline-from-center hover:text-yellow-200" id="allprojects"><a href="https://github.com/etemesgen?tab=repositories" target="_blank">ALL PROJECTS</a></p>
+    </div>
 
   </div>
 </template>
@@ -184,6 +226,26 @@ body{
 
 #cu{
   color: #FBFF42;
+}
+
+#css2{
+  margin: -3.4rem 0rem 0rem 10rem;
+}
+
+#css3{
+  margin: -3.4rem 0rem 0rem 10rem;
+}
+
+#css4{
+  margin: -3.4rem 0rem 0rem 8rem;
+}
+
+#css5{
+  margin: -3.4rem 0rem 0rem 8rem;
+}
+
+#css6{
+  margin: -3.4rem 0rem 0rem 10rem;
 }
 
  @media only screen and (min-width: 1500px) {
@@ -463,5 +525,111 @@ body{
       width: 30rem;
       margin: -26rem 0rem 0rem 55rem;
     }
+
+    #timedisplay{
+      width: 28rem;
+      margin-left: 2rem;
+    }
+
+    #html2{
+      margin-left: 6rem;
+    }
+
+    #css2{
+      margin-left: 15rem;
+    }
+
+    #javascript3{
+      margin-left: 23rem;
+    }
+
+    #francemontagne{
+      width: 29.5rem;
+      margin: -19.2rem 0rem 0rem 32.8rem;
+    }
+
+    #html3{
+      margin: 2.5rem 0rem 0rem 38rem;
+    }
+
+    #css3{
+      margin: -3.4rem 0rem 0rem 47rem;
+    }
+
+    #php3{
+      margin: -2.3rem 0rem 0rem 55rem;
+    }
+
+    #gmail{
+      width: 28rem;
+      margin: -18.7rem 0rem 0rem 65rem;
+    }
+
+    #html4{
+      margin: 2.5rem 0rem 0rem 67rem;
+    }
+
+    #css4{
+      margin: -3.4rem 0rem 0rem 75rem;
+    }
+
+    #javascript4{
+      margin: -2.6rem 0rem 0rem 82rem;
+    }
+
+    #php4{
+      margin: -2rem 0rem 0rem 88rem;
+    }
+
+    #interfaceadmin{
+      width: 28rem;
+      margin-left: 2rem;
+    }
+
+    #html5{
+      margin: 2.5rem 0rem 0rem 4rem;
+    }
+
+    #css5{
+      margin: -3.4rem 0rem 0rem 11rem;
+    }
+
+    #php5{
+      margin: -2.4rem 0rem 0rem 17rem;
+    }
+
+    #mysql2{
+      margin: -2.4rem 0rem 0rem 22.5rem;
+    }
+
+    #gestionpersonnel{
+      width: 28rem;
+      margin: -13.6rem 0rem 0rem 33rem;
+    }
+
+    #java2{
+      margin: 1rem 0rem 0rem 45rem;
+    }
+    
+    #tipcalculator{
+      margin: -20.7rem 0rem 0rem 69rem;
+    }
+
+    #html6{
+      margin-left: 70rem;
+    }
+
+    #css6{
+      margin-left: 78rem;
+    }
+
+    #javascript5{
+      margin-left: 86rem;
+    }
+
+    #allprojects{
+      margin-left: 43rem;
+    }
+  
   }
 </style>
