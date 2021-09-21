@@ -6,11 +6,11 @@
       <i class="fa fa-bars"></i>
     </button>
     <nav v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="text-green-200 text-xl grid mt-12 lg:flex inline text-center space-x-14 -ml-20 md:ml-96">
-      <NavLinks url="#" text="Home" class="ml-14 transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
-      <NavLinks url="#br" text="About me" class="transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
-      <NavLinks url="#ccc" text="CCC" class="transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
-      <NavLinks url="#projects" text="Projects" class="transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
-      <NavLinks url="#" text="Contact me" class="transition duration-500 ease-in-out hover:bg-green-600 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
+      <NavLinks url="#" text="Home" class="ml-14 transition duration-500 ease-in-out hover:text-white rounded-sm transform hover:-translate-y-1 hover:scale-110" id="home"/>
+      <NavLinks url="#br" text="About me" class="text-white transition duration-500 ease-in-out hover:text-green-200 rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
+      <NavLinks url="#ccc" text="CCC" class="text-white transition duration-500 ease-in-out hover:text-green-200 rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
+      <NavLinks url="#projects" text="Projects" class="text-white transition duration-500 ease-in-out hover:text-green-200 rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
+      <NavLinks url="#contact" text="Contact me" class="text-white transition duration-500 ease-in-out hover:text-green-200 rounded-sm transform hover:-translate-y-1 hover:scale-110"/>
     </nav>
     <div id="social-media" class="flex justify-end space-x-4 -mt-7 mr-10">
       <a href="#"><img :src="image"  alt="linkedin" id="linkedin" class="hidden max-w-full w-7 lg:flex"></a>
@@ -27,7 +27,7 @@
     <p id="quote" class="flex text-white text-xl font-bold ml-3 lg:text-3xl md:-mt-80">If you never failed,</p>
     <p id="quote2" class="flex text-white text-xl font-bold ml-20 lg:text-3xl">you never tried anything new.</p>
     <p class="hidden lg:flex ml-36 mt-10 text-gray-300">I love creating interfaces, coding and pretty much learning new things.</p>
-    <p class="text-center mt-10 text-xl text-green-200 hvr-underline-from-center hover:text-yellow-200 lg:ml-36"><a href="">LET'S CHAT !</a></p><br>
+    <p class="text-center mt-10 text-xl text-green-200 hvr-underline-from-center lg:ml-36"><a href="">LET'S CHAT !</a></p><br>
     <a href="#br"><img class="animate-bounce w-8 m-auto mt-10 lg:w-12" src="./assets/scroll.png" alt="scroll" id="scroll"></a>
 
     <!-- Second page -->
@@ -155,10 +155,39 @@
         <img class="w-9" src="./assets/CSS3.png" alt="css" id="css6">
         <img class="w-9 ml-64 -mt-10" src="./assets/javascript.png" alt="javascript" id="javascript5">
       </div>
-
-      <p class="ml-28 mt-20 text-xl text-green-200 hvr-underline-from-center hover:text-yellow-200" id="allprojects"><a href="https://github.com/etemesgen?tab=repositories" target="_blank">ALL PROJECTS</a></p>
+      <p class="ml-28 mt-20 text-xl text-green-200 hvr-underline-from-center" id="allprojects"><a href="https://github.com/etemesgen?tab=repositories" target="_blank">ALL PROJECTS</a></p>
     </div>
 
+    <!-- Fifth page -->
+
+    <p class="text-white mt-20 ml-16 text-3xl" id="contact">Start by <span class="hvr-underline-from-center text-green-200 -mt-3">saying hi</span></p>
+    <p id="error" class="text-xl text-red-200"></p>
+    <br>
+    <br>
+    <form id="form" @onsubmit="checkForm" action="">
+      <input class="bg-gray-500 text-white italic rounded ml-14 mt-10 w-64 h-9" type="text" name="name" id="name" placeholder=" Your name">
+      <br>
+      <input class="bg-gray-500 text-white italic rounded ml-14 mt-5 w-64 h-9" type="text" name="email" id="email" placeholder=" Your email">
+      <br>
+      <textarea class="bg-gray-500 text-white italic rounded ml-14 mt-5 w-64 h-40" name="message" id="message" cols="30" rows="10" placeholder=" Your message..."></textarea>
+      <br>
+      <br>
+      <button class="bg-green-200 ml-28 text-xl w-36 h-9 text-green-500 rounded-sm transition duration-500 ease-in-out hover:bg-transparent rounded-sm transform hover:-translate-y-1 hover:scale-110" value="submit" id="button">Send ✅</button>
+    </form>
+    <p class="hidden text-gray-400" id="teme">E-mail</p>
+    <p class="text-white text-xl ml-10 mt-2 hover:text-yellow-200" id="info">temesgen.edomiyas@yahoo.com</p>
+      <NavLinks url="#" text="Home" class="hidden text-green-200 ml-14 transition duration-500 ease-in-out hover:bg-white-200 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110" id="homenav"/>
+      <NavLinks url="#br" text="About me" class="hidden text-green-200 ml-14 transition duration-500 ease-in-out hover:bg-white-200 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110" id="aboutnav"/>
+      <NavLinks url="#ccc" text="CCC" class="hidden text-green-200 ml-14 transition duration-500 ease-in-out hover:bg-white-200 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110" id="cccnav"/>
+      <NavLinks url="#projects" text="Projects" class="hidden text-green-200 ml-14 transition duration-500 ease-in-out hover:bg-white-200 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110" id="projectnav"/>
+      <NavLinks url="#contact" text="Contact me" class="hidden text-green-200 ml-14 transition duration-500 ease-in-out hover:bg-white-200 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110" id="contactnav"/>
+    <img class="hidden" src="./assets/_EdoCode.png" alt="logo" id="logo">
+    <a href="#"><img :src="image"  alt="linkedin" id="linkedin2" class="max-w-full w-7 ml-36 mt-4"></a>
+    <a href="#"><img src="./assets/github.png" alt="github" id="github3" class="max-w-full w-7 ml-48 -mt-7"></a>
+    <p class="text-gray-400 ml-14 mt-5" id="love">2021. Made with ❤ by ⚡ Edomiyas ⚡</p>
+    <p id="title2" class="hidden absolute text-white text-xl ml-7 transition duration-500 ease-in-out hover:bg-green-600 text-grey-200 rounded-sm transform hover:-translate-y-1 hover:scale-110">Edomiyas &nbsp;<strong>Temesgen</strong></p>
+    <a href="#title"><img class="animate-bounce ml-80 -mt-16" src="./assets/Arrow.png" alt="arrow" id="arrow"></a>
+    <br>
   </div>
 </template>
 
@@ -176,12 +205,21 @@ export default {
     return{
       image: image,
       me: me,
-      showMenu: false
+      showMenu: false,
+      name: null,
+      email: null
     }
   },
   methods: {
     toggleNavbar: function(){
       this.showMenu = !this.showMenu;
+    },
+    checkForm: function(){
+      if(this.name && this.email){
+        return true;
+      } else{
+        document.getElementById("errors").innerHTML = "Name and email is required";
+      }
     }
   }
 }
@@ -248,7 +286,7 @@ body{
   margin: -3.4rem 0rem 0rem 10rem;
 }
 
- @media only screen and (min-width: 1500px) {
+ @media only screen and (min-width: 1200px) {
     #php{
       display: flex;
       width: 6rem;
@@ -269,7 +307,7 @@ body{
       height: 2px;
       bottom: 0;
       left: 0;
-      background-color: #FDD835;
+      background-color: #9FFAC9;
       transform: scaleX(0);
       transition: transform 0.3s ease;
     }
@@ -296,7 +334,7 @@ body{
       left: 51%;
       right: 51%;
       bottom: 0;
-      background: #FDD835;
+      background: #9FFAC9;
       height: .2rem;
       -webkit-transition-property: left, right;
       transition-property: left, right;
@@ -630,6 +668,96 @@ body{
     #allprojects{
       margin-left: 43rem;
     }
+
+    #contact{
+      margin: 9rem 0rem 0rem 10rem;
+    }
+
+    #name{
+      width: 20rem;
+      margin: 2rem 0rem 0rem 10rem;
+    }
+
+    #email{
+      width: 20rem;
+      margin: 2rem 0rem 0rem 10rem;
+    }
+
+    #message{
+      width: 20rem;
+      margin: 2rem 0rem 0rem 10rem;
+    }
   
+    #button{
+      margin-left: 15.5rem;
+    }
+
+    #arrow{
+      margin: -3rem 0rem 0rem 80rem;
+    }
+
+    #teme{
+      display: flex;
+      position: absolute;
+      font-size: 1.2rem;
+      margin: -25rem 0rem 0rem 55rem;
+    }
+
+    #info{
+      margin: -22rem 0rem 0rem 55rem;
+      font-size: 1.5rem;
+    }
+
+    #logo{
+      display: flex;
+      position: absolute;
+      width: 10rem;
+      height: 9rem;
+      margin: 3.3rem 0rem 0rem 65rem;
+    }
+
+    #love{
+      margin: 25rem 0rem 0rem 30rem;
+    }
+
+    #title2{
+      display: flex;
+      margin: -1.8rem 0rem 0rem 10rem;
+    }
+
+    #linkedin2{
+      position: absolute;
+      margin: 24.5rem 0rem 0rem 55rem;
+    }
+
+    #github3{
+      position: absolute;
+      margin: 24.5rem 0rem 0rem 58.5rem;
+    }
+
+    #homenav, #aboutnav, #cccnav, #projectnav, #contactnav{
+      display: flex;
+      position: absolute;
+    }
+
+    #homenav{
+      margin: 3rem 0rem 0rem 56rem;
+    }
+
+    #aboutnav{
+      margin: 5rem 0rem 0rem 56rem;
+    }
+
+    #cccnav{
+      margin: 7rem 0rem 0rem 56rem;
+    }
+
+    #projectnav{
+      margin: 9rem 0rem 0rem 56rem;
+    }
+
+    #contactnav{
+      margin: 11rem 0rem 0rem 56rem;
+    }
   }
 </style>
