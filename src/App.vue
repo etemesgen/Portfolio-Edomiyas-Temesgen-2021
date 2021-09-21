@@ -164,10 +164,10 @@
     <p id="error" class="text-xl text-red-200"></p>
     <br>
     <br>
-    <form id="form" @onsubmit="checkForm" action="">
-      <input class="bg-gray-500 text-white italic rounded ml-14 mt-10 w-64 h-9" type="text" name="name" id="name" placeholder=" Your name">
+    <form id="form" action="https://formsubmit.co/temesgen.edomiyas@yahoo.com" method="POST">
+      <input class="bg-gray-500 text-white italic rounded ml-14 mt-10 w-64 h-9" type="text" name="name" id="name" placeholder=" Your name" required>
       <br>
-      <input class="bg-gray-500 text-white italic rounded ml-14 mt-5 w-64 h-9" type="text" name="email" id="email" placeholder=" Your email">
+      <input class="bg-gray-500 text-white italic rounded ml-14 mt-5 w-64 h-9" type="text" name="email" id="email" placeholder=" Your email" required>
       <br>
       <textarea class="bg-gray-500 text-white italic rounded ml-14 mt-5 w-64 h-40" name="message" id="message" cols="30" rows="10" placeholder=" Your message..."></textarea>
       <br>
@@ -213,13 +213,6 @@ export default {
   methods: {
     toggleNavbar: function(){
       this.showMenu = !this.showMenu;
-    },
-    checkForm: function(){
-      if(this.name && this.email){
-        return true;
-      } else{
-        document.getElementById("errors").innerHTML = "Name and email is required";
-      }
     }
   }
 }
