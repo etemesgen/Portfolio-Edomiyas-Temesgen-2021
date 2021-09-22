@@ -1,7 +1,18 @@
 <template> 
   <div id="app" class="flex-1">
+    <div :class="isDark ? 'dark' : ''">
+      <div class="absolute ml-60 mt-2 transform rotate-180">
+      <label for="toogleA" class="flex items-center cursor-pointer">
+      <div class="relative">
+        <input id="toogleA" type="checkbox" class="sr-only" @click="isDark =! isDark"/>
+      <div class="w-10 h-4 bg-gray-400 rounded-full shadow-inner"></div>
+      <div class="dot absolute w-6 h-6 bg-green-200 rounded-full shadow -left-1 -top-1 transition"></div>
+      </div>
+      </label>
+      </div>
+
     <!-- Home page -->
-    <p id="title" class="flex absolute text-white text-xl ml-7 transition duration-500 ease-in-out hover:bg-green-600 text-grey-200 rounded-sm transform hover:-translate-y-1 hover:scale-110">Edomiyas &nbsp;<strong>Temesgen</strong></p>
+    <p id="title" class="flex absolute text-white text-xl ml-7 transition duration-500 ease-in-out hover:bg-green-600 text-grey-200 rounded-sm transform hover:-translate-y-1 hover:scale-110 dark:text-gray-900">Edomiyas &nbsp;<strong>Temesgen</strong></p>
     <button id="hamburger" class="flex text-green-200 text-3xl ml-80 mt-10 lg:hidden" v-on:click="toggleNavbar()">
       <i class="fa fa-bars"></i>
     </button>
@@ -188,6 +199,7 @@
     <p id="title2" class="hidden absolute text-white text-xl ml-7 transition duration-500 ease-in-out hover:bg-green-600 text-grey-200 rounded-sm transform hover:-translate-y-1 hover:scale-110">Edomiyas &nbsp;<strong>Temesgen</strong></p>
     <a href="#title"><img class="animate-bounce ml-80 -mt-16" src="./assets/Arrow.png" alt="arrow" id="arrow"></a>
     <br>
+    </div>
   </div>
 </template>
 
@@ -206,8 +218,7 @@ export default {
       image: image,
       me: me,
       showMenu: false,
-      name: null,
-      email: null
+      isDark: true
     }
   },
   methods: {
@@ -228,6 +239,12 @@ html{
 
 body{
   font-family: 'Rockwell Nova', sans-serif;
+}
+
+/* Toggle A */
+input:checked ~ .dot {
+  transform: translateX(100%);
+  background-color: #FFFFFF;
 }
 
 #css{
