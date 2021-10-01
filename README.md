@@ -2,7 +2,7 @@
 
 ## Here's my new portfolio 2k21
 
-link
+https://edocode.netlify.app/
 
 ## Technologies
 
