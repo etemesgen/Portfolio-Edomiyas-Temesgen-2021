@@ -14,7 +14,7 @@
     
     <!-- Home page -->
     <p id="title" class="flex absolute text-white text-xl ml-7 mt-10 transition duration-500 ease-in-out hover:bg-green-600 text-grey-200 rounded-sm transform hover:-translate-y-1 hover:scale-110 dark:text-gray-900">Edomiyas &nbsp;<strong>Temesgen</strong></p>
-    <button id="hamburger" class="flex text-green-200 text-3xl ml-96 mt-10 lg:hidden" v-on:click="toggleNavbar()">
+    <button id="hamburger" class="flex text-green-200 text-3xl mt-10 lg:hidden" v-on:click="toggleNavbar()">
       <i class="fa fa-bars"></i>
     </button>
     <nav v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="text-green-200 text-xl grid mt-12 lg:flex inline text-center space-x-14 -ml-20 md:ml-96">
@@ -30,14 +30,14 @@
       <a href="https://github.com/etemesgen/" target="_blank"><img src="./assets/github.png" alt="github" id="github" class="hidden max-w-full w-7 lg:flex"></a>
       <p id="githubtext" class="hidden text-white mt-1 lg:flex hover:text-gray-200 dark:text-gray-900">GitHub</p>
     </div>
-    <p id="dev" class="bg-green-200 w-56 p-1 font-bold text-xl text-center ml-28 rounded transition duration-500 ease-in-out hover:bg-yellow-200 text-grey-200 rounded-sm transform hover:-translate-y-1 hover:scale-110 lg:ml-36 w-60 mt-24 md:mt-36">Full-Stack Developer</p>
+    <p id="dev" class="bg-green-200 w-56 p-1 font-bold text-xl text-center ml-20 rounded transition duration-500 ease-in-out hover:bg-yellow-200 text-grey-200 rounded-sm transform hover:-translate-y-1 hover:scale-110 lg:ml-36 w-60 mt-24 md:mt-36">Full-Stack Developer</p>
     <img class="flex w-10 ml-80 mt-14 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 lg:float-right mr-24 md:-mt-7" src="./assets/javascript.png" alt="javascript" id="javascript">
-    <img class="flex w-40 -mt-10 ml-36 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 lg:w-48 md:float-right -mr-52" :src="me" alt="me" id="me">  <!-- Mobile first responsive, define mobile size by default -->
+    <img class="flex w-40 -mt-10 ml-32 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 lg:w-48 md:float-right -mr-52" :src="me" alt="me" id="me">  <!-- Mobile first responsive, define mobile size by default -->
     <img class="flex w-20 ml-12 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/php.png" alt="php" id="php">
-    <img class="flex w-32 ml-72 -mt-8 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/vue.png" alt="vue" id="vue">
+    <img class="flex w-32 ml-64 -mt-8 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/vue.png" alt="vue" id="vue">
     <br>
-    <p id="quote" class="flex text-white text-xl font-bold ml-16 lg:text-3xl md:-mt-80 dark:text-gray-900">If you never failed,</p>
-    <p id="quote2" class="flex text-white text-xl font-bold ml-36 lg:text-3xl dark:text-gray-900">you never tried anything new.</p>
+    <p id="quote" class="flex text-white text-xl font-bold ml-10 lg:text-3xl md:-mt-80 dark:text-gray-900">If you never failed,</p>
+    <p id="quote2" class="flex text-white text-xl font-bold ml-24 lg:text-3xl dark:text-gray-900">you never tried anything new.</p>
     <p class="hidden lg:flex ml-36 mt-10 text-gray-400">I love creating interfaces, coding and pretty much learning new things.</p>
     <p class="text-center mt-10 text-xl text-green-200 hvr-underline-from-center lg:ml-36"><a href="#contact">LET'S CHAT !</a></p><br>
     <a href="#br"><img class="animate-bounce w-8 m-auto mt-10 lg:w-12" src="./assets/scroll.png" alt="scroll" id="scroll"></a>
@@ -60,7 +60,7 @@
     <img class="absolute" src="./assets/web-programming.png" alt="programming" id="programming">
   
     <div class="grid">
-      <div class="bg-gray-500 h-24 w-72 ml-24 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 dark:bg-gray-400" id="grid1">
+      <div class="bg-gray-500 h-24 w-72 ml-16 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 dark:bg-gray-400" id="grid1">
         <p class="text-green-200 ml-4 mt-2" id="front">Front-End</p>
         <img class="w-10 ml-1 mt-2" src="./assets/html.png" alt="html" id="html">
         <img class="w-6 ml-14 -mt-9" src="./assets/CSS3.png" alt="css" id="css">
@@ -69,35 +69,35 @@
         <img src="./assets/vue.png" alt="vue" id="vue2">
         <img class="w-8" src="./assets/chartjs.png" alt="vue" id="chartjs">
       </div>
-      <div class="bg-gray-500 h-24 w-72 ml-24 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 dark:bg-gray-400" id="grid2">
+      <div class="bg-gray-500 h-24 w-72 ml-16 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 dark:bg-gray-400" id="grid2">
         <p class="text-green-200 ml-4 mt-2" id="back">Back-End</p>
         <img class="w-10 ml-4 mt-3" src="./assets/php.png" alt="php" id="php2">
         <img class="w-8 ml-24 -mt-7" src="./assets/python.png" alt="python" id="python">
         <img class="w-14 -mt-10 ml-40" src="./assets/java.png" alt="java" id="java">
       </div>
-      <div class="bg-gray-500 h-24 w-72 ml-24 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 dark:bg-gray-400" id="grid3">
+      <div class="bg-gray-500 h-24 w-72 ml-16 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 dark:bg-gray-400" id="grid3">
         <p class="text-green-200 ml-4 mt-2" id="db">Database</p>
         <img class="w-16 ml-4 mt-1" src="./assets/mysql.png" alt="mysql" id="mysql">
         <img class="w-12 -mt-12 ml-28" src="./assets/mongodb.png" alt="mongodb" id="mongodb">
       </div>
-      <div class="bg-gray-500 h-24 w-72 ml-24 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 dark:bg-gray-400" id="grid4">
+      <div class="bg-gray-500 h-24 w-72 ml-16 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 dark:bg-gray-400" id="grid4">
         <p class="text-green-200 ml-4 mt-2" id="devops">DevOps</p>
         <img class="w-10 mt-2 ml-6" src="./assets/docker.png" alt="docker" id="docker">
       </div>
-      <div class="bg-gray-500 h-24 w-72 ml-24 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 dark:bg-gray-400" id="grid5">
+      <div class="bg-gray-500 h-24 w-72 ml-16 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 dark:bg-gray-400" id="grid5">
         <p class="text-green-200 ml-4 mt-2" id="ui">UI/UX Design</p>
         <img class="w-7 ml-6 mt-3" src="./assets/figma.png" alt="figma" id="figma">
         <img class="w-9 -mt-8 ml-20" src="./assets/adobexd.png" alt="adobexd" id="adobexd">
       </div>
-       <div class="bg-gray-500 h-24 w-72 ml-24 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 dark:bg-gray-400" id="grid6">
+       <div class="bg-gray-500 h-24 w-72 ml-16 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 dark:bg-gray-400" id="grid6">
         <p class="text-green-200 ml-4 mt-2" id="vs">Version Control</p>
         <img class="w-12 mt-1 ml-6" src="./assets/git.png" alt="git" id="git">
       </div>
-       <div class="bg-gray-500 h-24 w-72 ml-24 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 dark:bg-gray-400" id="grid7">
+       <div class="bg-gray-500 h-24 w-72 ml-16 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 dark:bg-gray-400" id="grid7">
         <p class="text-green-200 ml-4 mt-2" id="mb">Mobile Developement</p>
         <img class="w-8 mt-2 ml-6" src="./assets/react-native.png" alt="react-native" id="react-native">
       </div>
-      <div class="bg-gray-500 h-24 w-72 ml-24 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 dark:bg-gray-400" id="grid8">
+      <div class="bg-gray-500 h-24 w-72 ml-16 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 dark:bg-gray-400" id="grid8">
         <p class="text-green-200 ml-4 mt-2" id="tools">Tools</p>
         <img class="w-7 ml-4 mt-3" src="./assets/visual.png" alt="visual" id="visual">
         <img class="w-7 ml-16 -mt-7" src="./assets/eclipse.png" alt="eclipse" id="eclipse">
@@ -132,72 +132,72 @@
     <p id="projects" class="text-center mt-36 text-3xl text-white transition duration-500 ease-in-out hover:bg-green-200 transform hover:-translate-y-1 dark:text-gray-900">Discover my projects</p>
     <div id="all-project">
       <div id="project1">
-      <a href="https://time-display-edo.netlify.app/" target="_blank"><img class="mt-16 w-80 ml-20 rounded transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/timeDisplay.png" alt="timedisplay" id="timedisplay"></a>  
-        <img class="w-14 ml-24 mt-10" src="./assets/html.png" alt="html" id="html2">
+      <a href="https://time-display-edo.netlify.app/" target="_blank"><img class="mt-16 w-80 ml-12 rounded transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/timeDisplay.png" alt="timedisplay" id="timedisplay"></a>  
+        <img class="w-14 ml-20 mt-10" src="./assets/html.png" alt="html" id="html2">
         <img class="w-9" src="./assets/CSS3.png" alt="css" id="css2">
-        <img class="w-9 ml-80 -mt-10" src="./assets/javascript.png" alt="javascript" id="javascript3">
+        <img class="w-9 -mt-10" src="./assets/javascript.png" alt="javascript" id="javascript3">
       </div>
       <div id="project2">
-      <a href="https://github.com/etemesgen/PPE_France_Montagnes_Dynamique" target="_blank"><img class="mt-16 w-80 ml-20 rounded transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/FranceMontagne.png" alt="francemontagne" id="francemontagne"></a>
-        <img class="w-14 ml-24 mt-9" src="./assets/html.png" alt="html" id="html3">
+      <a href="https://github.com/etemesgen/PPE_France_Montagnes_Dynamique" target="_blank"><img class="mt-16 w-80 ml-12 rounded transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/FranceMontagne.png" alt="francemontagne" id="francemontagne"></a>
+        <img class="w-14 ml-20 mt-9" src="./assets/html.png" alt="html" id="html3">
         <img class="w-9" src="./assets/CSS3.png" alt="css" id="css3">
-        <img class="w-12 ml-80 -mt-10" src="./assets/php.png" alt="php" id="php3">
+        <img class="w-12 -mt-10" src="./assets/php.png" alt="php" id="php3">
       </div>
       <div id="project3">
-      <a href="https://github.com/etemesgen/PPE2_Gmail_single_page-back-end" target="_blank"><img class="mt-16 w-80 ml-20 rounded transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/gmail.jpg" alt="gmail" id="gmail"></a>
-        <img class="w-14 ml-16 mt-9" src="./assets/html.png" alt="html" id="html4">
+      <a href="https://github.com/etemesgen/PPE2_Gmail_single_page-back-end" target="_blank"><img class="mt-16 w-80 ml-12 rounded transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/gmail.jpg" alt="gmail" id="gmail"></a>
+        <img class="w-14 ml-20 mt-9" src="./assets/html.png" alt="html" id="html4">
         <img class="w-9" src="./assets/CSS3.png" alt="css" id="css4">
         <img class="w-9 ml-72 -mt-10" src="./assets/javascript.png" alt="javascript" id="javascript4">
         <img class="w-12 ml-96 -mt-8" src="./assets/php.png" alt="php" id="php4">
       </div>
       <div id="project4">
-       <a href="https://github.com/etemesgen/Interface_admin_gestion_client" target="_blank"><img class="mt-16 w-80 ml-20 rounded transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/Interfaceadmingestionclient.png" alt="interfaceadmin" id="interfaceadmin"></a>
-        <img class="w-14 ml-16 mt-9" src="./assets/html.png" alt="html" id="html5">
+       <a href="https://github.com/etemesgen/Interface_admin_gestion_client" target="_blank"><img class="mt-16 w-80 ml-12 rounded transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/Interfaceadmingestionclient.png" alt="interfaceadmin" id="interfaceadmin"></a>
+        <img class="w-14 ml-20 mt-9" src="./assets/html.png" alt="html" id="html5">
         <img class="w-9" src="./assets/CSS3.png" alt="css" id="css5">
         <img class="w-12 ml-72 -mt-9" src="./assets/php.png" alt="php" id="php5">
         <img class="w-16 ml-96 -mt-10" src="./assets/mysql.png" alt="mysql" id="mysql2">
       </div>
       <div id="project5">
-       <a href="https://github.com/etemesgen/personnel" target="_blank"><img class="mt-16 w-80 ml-20 rounded transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/GestionPersonnel.png" alt="gestionpersonnel" id="gestionpersonnel"></a>
-        <img class="w-20 ml-48 mt-4" src="./assets/java.png" alt="java" id="java2">
+       <a href="https://github.com/etemesgen/personnel" target="_blank"><img class="mt-16 w-80 ml-12 rounded transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/GestionPersonnel.png" alt="gestionpersonnel" id="gestionpersonnel"></a>
+        <img class="w-20 ml-44 mt-4" src="./assets/java.png" alt="java" id="java2">
       </div>
       <div id="project6">
-        <a href="https://tip-calculator-app-edo.vercel.app/" target="_blank"><img class="mt-16 w-80 ml-20 rounded transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/tipcalculator.png" alt="tipcalculator" id="tipcalculator"></a>  
-        <img class="w-14 ml-24 mt-10" src="./assets/html.png" alt="html" id="html6">
+        <a href="https://tip-calculator-app-edo.vercel.app/" target="_blank"><img class="mt-16 w-80 ml-12 rounded transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/tipcalculator.png" alt="tipcalculator" id="tipcalculator"></a>  
+        <img class="w-14 ml-20 mt-10" src="./assets/html.png" alt="html" id="html6">
         <img class="w-9" src="./assets/CSS3.png" alt="css" id="css6">
-        <img class="w-9 ml-80 -mt-10" src="./assets/javascript.png" alt="javascript" id="javascript5">
+        <img class="w-9 -mt-10" src="./assets/javascript.png" alt="javascript" id="javascript5">
       </div>
-      <p class="ml-40 mt-20 text-xl text-green-200 hvr-underline-from-center" id="allprojects"><a href="https://github.com/etemesgen?tab=repositories" target="_blank">ALL PROJECTS</a></p>
+      <p class="ml-36 mt-20 text-xl text-green-200 hvr-underline-from-center" id="allprojects"><a href="https://github.com/etemesgen?tab=repositories" target="_blank">ALL PROJECTS</a></p>
     </div>
 
     <!-- Fifth page -->
 
-    <p class="text-white mt-20 ml-28 text-3xl dark:text-gray-900" id="contact">Start by <span class="hvr-underline-from-center text-green-200 -mt-3">saying hi</span></p>
+    <p class="text-white mt-20 text-3xl dark:text-gray-900" id="contact">Start by <span class="hvr-underline-from-center text-green-200 -mt-3">saying hi</span></p>
     <br>
     <br>
     <form id="form" action="https://formsubmit.co/temesgen.edomiyas@yahoo.com" method="POST">
-      <input class="focus:ring-2 focus:ring-green-200 bg-gray-500 text-white italic rounded ml-24 mt-10 w-64 h-9 dark:bg-gray-300" type="text" name="name" id="name" placeholder=" Your name" required>
+      <input class="focus:ring-2 focus:ring-green-200 bg-gray-500 text-white italic rounded ml-20 mt-10 w-64 h-9 dark:bg-gray-300" type="text" name="name" id="name" placeholder=" Your name" required>
       <br>
-      <input class="focus:ring-2 focus:ring-green-200 bg-gray-500 text-white italic rounded ml-24 mt-5 w-64 h-9 dark:bg-gray-300" type="text" name="email" id="email" placeholder=" Your email" required>
+      <input class="focus:ring-2 focus:ring-green-200 bg-gray-500 text-white italic rounded ml-20 mt-5 w-64 h-9 dark:bg-gray-300" type="text" name="email" id="email" placeholder=" Your email" required>
       <br>
-      <textarea class="focus:ring-2 focus:ring-green-200 bg-gray-500 text-white italic rounded ml-24 mt-5 w-64 h-40 dark:bg-gray-300" name="message" id="message" cols="30" rows="10" placeholder=" Your message..."></textarea>
+      <textarea class="focus:ring-2 focus:ring-green-200 bg-gray-500 text-white italic rounded ml-20 mt-5 w-64 h-40 dark:bg-gray-300" name="message" id="message" cols="30" rows="10" placeholder=" Your message..."></textarea>
       <br>
       <br>
-      <button class="bg-green-200 ml-36 text-xl w-36 h-9 text-green-500 rounded-sm transition duration-500 ease-in-out hover:bg-transparent rounded-sm transform hover:-translate-y-1 hover:scale-110" value="submit" id="button">Send ✅</button>
+      <button class="bg-green-200 text-xl w-36 h-9 text-green-500 rounded-sm transition duration-500 ease-in-out hover:bg-transparent rounded-sm transform hover:-translate-y-1 hover:scale-110" value="submit" id="button">Send ✅</button>
     </form>
     <p class="hidden text-gray-400" id="teme">E-mail</p>
-    <p class="text-white text-xl ml-20 mt-2 hover:text-yellow-200 dark:text-gray-900" id="info">temesgen.edomiyas@yahoo.com</p>
+    <p class="text-white text-xl ml-16 mt-2 hover:text-yellow-200 dark:text-gray-900" id="info">temesgen.edomiyas@yahoo.com</p>
       <NavLinks url="#" text="Home" class="hidden text-green-200 ml-14 transition duration-500 ease-in-out hover:bg-white-200 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110" id="homenav"/>
       <NavLinks url="#br" text="About me" class="hidden text-green-200 ml-14 transition duration-500 ease-in-out hover:bg-white-200 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110" id="aboutnav"/>
       <NavLinks url="#ccc" text="CCC" class="hidden text-green-200 ml-14 transition duration-500 ease-in-out hover:bg-white-200 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110" id="cccnav"/>
       <NavLinks url="#projects" text="Projects" class="hidden text-green-200 ml-14 transition duration-500 ease-in-out hover:bg-white-200 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110" id="projectnav"/>
       <NavLinks url="#contact" text="Contact me" class="hidden text-green-200 ml-14 transition duration-500 ease-in-out hover:bg-white-200 text-white rounded-sm transform hover:-translate-y-1 hover:scale-110" id="contactnav"/>
-    <img class="w-28 ml-40 mt-5" src="./assets/_EdoCode.png" alt="logo" id="logo">
-    <a href="https://www.linkedin.com/in/edomiyas-temesgen-16ba01173/" target="_blank"><img :src="image"  alt="linkedin" id="linkedin2" class="max-w-full w-7 ml-44 mt-4"></a>
-    <a href="https://github.com/etemesgen/" target="_blank"><img src="./assets/github.png" alt="github" id="github3" class="max-w-full w-7 ml-56 -mt-7"></a>
-    <p class="text-gray-400 ml-24 mt-5 dark:text-gray-900" id="love">2021. Made with ❤ by ⚡ Edomiyas ⚡</p>
+    <img class="w-28 mt-5" src="./assets/_EdoCode.png" alt="logo" id="logo">
+    <a href="https://www.linkedin.com/in/edomiyas-temesgen-16ba01173/" target="_blank"><img :src="image"  alt="linkedin" id="linkedin2" class="max-w-full w-7 mt-4"></a>
+    <a href="https://github.com/etemesgen/" target="_blank"><img src="./assets/github.png" alt="github" id="github3" class="max-w-full w-7 -mt-7"></a>
+    <p class="text-gray-400 ml-16 mt-5 dark:text-gray-900" id="love">2021. Made with ❤ by ⚡ Edomiyas ⚡</p><br>
     <p id="title2" class="hidden absolute text-white text-xl ml-7 transition duration-500 ease-in-out hover:bg-green-600 text-grey-200 rounded-sm transform hover:-translate-y-1 hover:scale-110 dark:text-gray-900">Edomiyas &nbsp;<strong>Temesgen</strong></p>
-    <a href="#title"><img class="animate-bounce ml-96 -mt-16" src="./assets/Arrow.png" alt="arrow" id="arrow"></a>
+    <a href="#title"><img class="animate-bounce ml-80 -mt-20" src="./assets/Arrow.png" alt="arrow" id="arrow"></a>
     <br>
     </div>
   </div>
@@ -248,8 +248,12 @@ input:checked ~ .dot {
   background-color: #FFFFFF;
 }
 
-#javascript{
+#hamburger{
   margin-left: 22rem;
+}
+
+#javascript{
+  margin-left: 20rem;
 }
 
 #css{
@@ -282,36 +286,68 @@ input:checked ~ .dot {
 }
 
 #css2{
-  margin: -3.4rem 0rem 0rem 13rem;
+  margin: -3.4rem 0rem 0rem 12rem;
+}
+
+#javascript3{
+  margin-left: 18.5rem;
 }
 
 #css3{
-  margin: -3.4rem 0rem 0rem 13rem;
+  margin: -3.4rem 0rem 0rem 12rem;
+}
+
+#php3{
+  margin-left: 18rem;
 }
 
 #css4{
-  margin: -3.4rem 0rem 0rem 11rem;
+  margin: -3.4rem 0rem 0rem 12rem;
 }
 
 #css5{
-  margin: -3.4rem 0rem 0rem 11rem;
+  margin: -3.4rem 0rem 0rem 12rem;
 }
 
 #css6{
-  margin: -3.4rem 0rem 0rem 13rem;
+  margin: -3.4rem 0rem 0rem 12rem;
+}
+
+#javascript5{
+  margin-left: 18rem;
 }
 
 #problem-solving{
-  margin: -9.5rem 0rem 0rem 7rem;
+  margin: -9.5rem 0rem 0rem 6rem;
 }
 
 #right-arrow{
-  margin: -9rem 0rem 0rem 13.9rem;
+  margin: -9rem 0rem 0rem 12rem;
 }
 
 #programming{
   width: 2.9rem;
-  margin: -9.2rem 0rem 0rem 20rem;
+  margin: -9.2rem 0rem 0rem 18rem;
+}
+
+#contact{
+  margin-left: 5.8rem;
+}
+
+#button{
+  margin-left: 8.5rem;
+}
+
+#logo{
+  margin-left: 9.5rem;
+}
+
+#linkedin2{
+  margin-left: 10.7rem;
+}
+
+#github3{
+  margin-left: 13.7rem;
 }
 
  @media only screen and (min-width: 1200px) {
