@@ -196,7 +196,7 @@
     <a href="https://www.linkedin.com/in/edomiyas-temesgen-16ba01173/" target="_blank"><img :src="image"  alt="linkedin" id="linkedin2" class="max-w-full w-7 mt-4"></a>
     <a href="https://github.com/etemesgen/" target="_blank"><img src="./assets/github.png" alt="github" id="github3" class="max-w-full w-7 -mt-7"></a>
     <p class="text-gray-400 ml-16 mt-5 dark:text-gray-900" id="love">2021. Made with ❤ by ⚡ Edomiyas ⚡</p><br>
-    <p id="title2" class="hidden absolute text-white text-xl ml-7 transition duration-500 ease-in-out hover:bg-green-600 text-grey-200 rounded-sm transform hover:-translate-y-1 hover:scale-110 dark:text-gray-900">Edomiyas &nbsp;<strong>Temesgen</strong></p>
+    <p id="title2" class="hidden text-white text-xl ml-7">Edomiyas &nbsp;<strong>Temesgen</strong></p>
     <a href="#title"><img class="animate-bounce ml-80 -mt-20" src="./assets/Arrow.png" alt="arrow" id="arrow"></a>
     <br>
     </div>
@@ -815,7 +815,7 @@ input:checked ~ .dot {
 
     #title2{
       display: flex;
-      margin: -1.8rem 0rem 0rem 10rem;
+      margin: -3.2rem 0rem 0rem 10rem;
     }
 
     #linkedin2{
