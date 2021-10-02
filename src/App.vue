@@ -145,17 +145,17 @@
       </div>
       <div id="project3">
       <a href="https://github.com/etemesgen/PPE2_Gmail_single_page-back-end" target="_blank"><img class="mt-16 w-80 ml-12 rounded transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/gmail.jpg" alt="gmail" id="gmail"></a>
-        <img class="w-14 ml-20 mt-9" src="./assets/html.png" alt="html" id="html4">
+        <img class="w-14 ml-16 mt-9" src="./assets/html.png" alt="html" id="html4">
         <img class="w-9" src="./assets/CSS3.png" alt="css" id="css4">
-        <img class="w-9 ml-72 -mt-10" src="./assets/javascript.png" alt="javascript" id="javascript4">
-        <img class="w-12 ml-96 -mt-8" src="./assets/php.png" alt="php" id="php4">
+        <img class="w-9 -mt-10" src="./assets/javascript.png" alt="javascript" id="javascript4">
+        <img class="w-12 -mt-8" src="./assets/php.png" alt="php" id="php4">
       </div>
       <div id="project4">
        <a href="https://github.com/etemesgen/Interface_admin_gestion_client" target="_blank"><img class="mt-16 w-80 ml-12 rounded transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/Interfaceadmingestionclient.png" alt="interfaceadmin" id="interfaceadmin"></a>
-        <img class="w-14 ml-20 mt-9" src="./assets/html.png" alt="html" id="html5">
+        <img class="w-14 ml-16 mt-9" src="./assets/html.png" alt="html" id="html5">
         <img class="w-9" src="./assets/CSS3.png" alt="css" id="css5">
-        <img class="w-12 ml-72 -mt-9" src="./assets/php.png" alt="php" id="php5">
-        <img class="w-16 ml-96 -mt-10" src="./assets/mysql.png" alt="mysql" id="mysql2">
+        <img class="w-12 -mt-9" src="./assets/php.png" alt="php" id="php5">
+        <img class="w-16 -mt-10" src="./assets/mysql.png" alt="mysql" id="mysql2">
       </div>
       <div id="project5">
        <a href="https://github.com/etemesgen/personnel" target="_blank"><img class="mt-16 w-80 ml-12 rounded transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/GestionPersonnel.png" alt="gestionpersonnel" id="gestionpersonnel"></a>
@@ -172,7 +172,7 @@
 
     <!-- Fifth page -->
 
-    <p class="text-white mt-20 text-3xl dark:text-gray-900" id="contact">Start by <span class="hvr-underline-from-center text-green-200 -mt-3">saying hi</span></p>
+    <p class="text-white mt-20 text-4xl dark:text-gray-900" id="contact">Start by <span class="hvr-underline-from-center text-green-200 -mt-3">saying hi</span></p>
     <br>
     <br>
     <form id="form" action="https://formsubmit.co/temesgen.edomiyas@yahoo.com" method="POST">
@@ -302,11 +302,27 @@ input:checked ~ .dot {
 }
 
 #css4{
-  margin: -3.4rem 0rem 0rem 12rem;
+  margin: -3.4rem 0rem 0rem 9.5rem;
+}
+
+#javascript4{
+  margin-left: 14.5rem;
+}
+
+#php4{
+  margin-left: 19rem;
 }
 
 #css5{
-  margin: -3.4rem 0rem 0rem 12rem;
+  margin: -3.4rem 0rem 0rem 9.5rem;
+}
+
+#php5{
+  margin-left: 14rem;
+}
+
+#mysql2{
+  margin-left: 18.5rem;
 }
 
 #css6{
@@ -331,7 +347,7 @@ input:checked ~ .dot {
 }
 
 #contact{
-  margin-left: 5.8rem;
+  margin-left: 4.5rem;
 }
 
 #button{
