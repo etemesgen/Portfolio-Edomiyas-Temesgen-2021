@@ -2,7 +2,7 @@
   <div :class="isDark ? '' : 'dark'">
     <div id="app" class="flex-1 bg-gray-600 dark:bg-white">
       <br>
-      <div class="absolute ml-60 mt-12 transform lg:mt-14">
+      <div class="absolute ml-60 mt-12 transform lg:mt-14" id="toggle">
       <label for="toogleA" class="flex items-center cursor-pointer">
       <div class="relative">
         <input id="toogleA" type="checkbox" class="sr-only" @click="isDark =! isDark"/>
@@ -17,7 +17,7 @@
     <button id="hamburger" class="flex text-green-200 text-3xl mt-10 lg:hidden" v-on:click="toggleNavbar()">
       <i class="fa fa-bars"></i>
     </button>
-    <nav v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="text-green-200 text-xl grid mt-12 lg:flex inline text-center space-x-14 -ml-20 md:ml-96">
+    <nav v-bind:class="{'hidden': !showMenu, 'flex': showMenu}" class="text-green-200 text-xl grid mt-12 lg:flex inline text-center space-x-14 -ml-20 md:ml-96 md:flex" id="navbar">
       <NavLinks url="#" text="Home" class="ml-14 transition duration-500 ease-in-out hover:text-white rounded-sm transform hover:-translate-y-1 hover:scale-110 dark:text-gray-900" id="home"/>
       <NavLinks url="#br" text="About me" class="text-white transition duration-500 ease-in-out hover:text-green-200 rounded-sm transform hover:-translate-y-1 hover:scale-110 dark:text-gray-900"/>
       <NavLinks url="#ccc" text="CCC" class="text-white transition duration-500 ease-in-out hover:text-green-200 rounded-sm transform hover:-translate-y-1 hover:scale-110 dark:text-gray-900"/>
@@ -38,7 +38,7 @@
     <br>
     <p id="quote" class="flex text-white text-xl font-bold ml-10 lg:text-3xl md:-mt-80 dark:text-gray-900">If you never failed,</p>
     <p id="quote2" class="flex text-white text-xl font-bold ml-24 lg:text-3xl dark:text-gray-900">you never tried anything new.</p>
-    <p class="hidden lg:flex ml-36 mt-10 text-gray-400">I love creating interfaces, coding and pretty much learning new things.</p>
+    <p class="hidden lg:flex ml-36 mt-10 text-gray-400 md:flex" id="quote3">I love creating interfaces, coding and pretty much learning new things.</p>
     <p class="text-center mt-10 text-xl text-green-200 hvr-underline-from-center lg:ml-36"><a href="#contact">LET'S CHAT !</a></p><br>
     <a href="#br"><img class="animate-bounce w-8 m-auto mt-10 lg:w-12" src="./assets/scroll.png" alt="scroll" id="scroll"></a>
 
@@ -49,18 +49,19 @@
     <p class="text-xl text-center text-white md:text-3xl dark:text-gray-900" id="hello">Hello! &nbsp;I’m Edomiyas Temesgen</p>
     <p class="text-white text-center italic dark:text-gray-900" id="para1">“First, solve the problem. Then, write the code.” – John Johnson</p>
     <br>
-    <p class="text-gray-400 text-center mt-10" id="para4">That’s what coding teaches me every day. 
+    <p class="text-gray-400 text-center mt-16" id="para4">That’s what coding teaches me every day. 
       Before even thinking to code, we have to be a 
       problem solver. Being a third year software 
       engineering student with an internship, 
       i work to succeed using my passion for living.</p>
 
-    <img class="absolute w-14" src="./assets/problem-solving.png" alt="problem solving" id="problem-solving">
-    <img class="absolute w-9 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/right-arrow.png" alt="right-arrow" id="right-arrow">
-    <img class="absolute" src="./assets/web-programming.png" alt="programming" id="programming">
-  
+    <img class="w-14" src="./assets/problem-solving.png" alt="problem solving" id="problem-solving">
+    <img class="w-9 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110" src="./assets/right-arrow.png" alt="right-arrow" id="right-arrow">
+    <img class="" src="./assets/web-programming.png" alt="programming" id="programming">
+      
+
     <div class="grid">
-      <div class="bg-gray-500 h-24 w-72 ml-16 mt-10 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 dark:bg-gray-400" id="grid1">
+      <div class="bg-gray-500 h-24 w-72 ml-16 mt-52 transition duration-500 ease-in-out hover: transform hover:-translate-y-1 hover:scale-110 dark:bg-gray-400" id="grid1">
         <p class="text-green-200 ml-4 mt-2" id="front">Front-End</p>
         <img class="w-10 ml-1 mt-2" src="./assets/html.png" alt="html" id="html">
         <img class="w-6 ml-14 -mt-9" src="./assets/CSS3.png" alt="css" id="css">
@@ -334,16 +335,16 @@ input:checked ~ .dot {
 }
 
 #problem-solving{
-  margin: -9.5rem 0rem 0rem 6rem;
+  margin: -11rem 0rem 0rem 4rem;
 }
 
 #right-arrow{
-  margin: -9rem 0rem 0rem 12rem;
+  margin: -3rem 0rem 0rem 10rem;
 }
 
 #programming{
   width: 2.9rem;
-  margin: -9.2rem 0rem 0rem 18rem;
+  margin: -2.5rem 0rem 0rem 15rem;
 }
 
 #contact{
@@ -366,7 +367,7 @@ input:checked ~ .dot {
   margin-left: 13.7rem;
 }
 
- @media only screen and (min-width: 1200px) {
+ @media only screen and (min-width: 1200px) {  /* Desktop */
 
     #title{
       margin-top: 2.9rem;
@@ -852,5 +853,402 @@ input:checked ~ .dot {
     #contactnav{
       margin: 11rem 0rem 0rem 56rem;
     }
+  }
+
+  @media only screen and (min-width: 768px) and (max-width: 1199px) {
+    #title{
+      margin-left: 17rem;
+    }
+
+    #toggle{
+      margin-left: 31rem;
+    }
+
+    #hamburger{
+      display: none;
+    }
+    
+    #navbar{
+      margin: 6rem 0rem 0rem 5rem;
+    }
+
+    #me{
+      position: absolute;
+      margin: 5rem 0rem 0rem 20rem;
+    }
+
+    #dev{
+      margin: 5rem 0rem 0rem 18rem;
+    }
+
+    #javascript{
+      position: absolute;
+      margin: 3rem 0rem 0rem 30rem;
+    }
+
+    #php{
+      position: absolute;
+      margin: 15rem 0rem 0rem 13rem;
+    }
+
+    #vue{
+      position: absolute;
+      margin: 14rem 0rem 0rem 30rem;
+    }
+
+    #quote{
+      margin: 23rem 0rem 0rem 13rem;
+    }
+
+    #quote2{
+      margin: 0rem 0rem 0rem 19rem;
+    }
+
+    #quote3{
+      margin: 1rem 0rem 0rem 10rem;
+    }
+
+    #problem-solving{
+      margin: -6.5rem 0rem 0rem 18rem;
+    }
+
+    #right-arrow{
+      margin: -3rem 0rem 0rem 25rem;
+    }
+
+    #programming{
+      margin: -2.5rem 0rem 0rem 31rem;
+    }
+
+    #grid1, #grid2, #grid3, #grid4, #grid5, #grid6, #grid7, #grid8{
+      height: 8rem;
+      width: 25rem;
+      margin-left: 14rem;
+    }
+
+     #front, #back, #db, #devops, #ui, #vs, #mb, #tools{
+      margin: 1rem 0rem 0rem 1.5rem;
+      font-size: 1.1rem;
+    }
+
+    #html{
+      width: 3.5rem;
+      margin: .7rem 0rem 0rem 0.3rem;
+    }
+    
+    #css{
+      width: 2.2rem;
+      margin: -3.3rem 0rem 0rem 5.2rem;
+    }
+
+    #tailwind{
+      width: 2.8rem;
+      margin: -3rem 0rem 0rem 9rem;
+    }
+
+    #javascript2{
+      width: 2.5rem;
+      margin: -2.5rem 0rem 0rem 13.5rem;
+    }
+
+    #vue2{
+      width: 2.5rem;
+      margin: -2.5rem 0rem 0rem 17.7rem;
+    }
+
+    #chartjs{
+      width: 2.5rem;
+      margin: -2.5rem 0rem 0rem 21.5rem;
+    }
+
+    #php2{
+      width: 3.5rem;
+      margin: 1rem 0rem 0rem 1rem;
+    }
+
+    #python{
+      width: 2.8rem;
+      margin: -2.4rem 0rem 0rem 7rem;
+    }
+
+    #java{
+      width: 4.5rem;
+      margin: -3.3rem 0rem 0rem 12rem;
+    }
+
+    #mysql{
+      width: 4.5rem;
+      margin: 0.5rem 0rem 0rem 1rem;
+    }
+
+    #mongodb{
+      width: 3.5rem;
+      margin: -3.5rem 0rem 0rem 9rem;
+    }
+
+    #docker{
+      width: 3.5rem;
+      margin: 0.5rem 0rem 0rem 1.5rem;
+    }
+
+    #figma{
+      width: 2.3rem;
+      margin: 1rem 0rem 0rem 1.5rem;
+    }
+
+    #adobexd{
+      width: 2.7rem;
+      margin: -2.5rem 0rem 0rem 6rem;
+    }
+
+    #git{
+      width: 3.5rem;
+      margin: 0.5rem 0rem 0rem 1.5rem;    
+    }
+
+    #react-native{
+      width: 3rem;
+      margin: 0.5rem 0rem 0rem 1.5rem; 
+    }
+
+    #visual{
+      width: 2.3rem;
+      margin: 1rem 0rem 0rem 1rem;
+    }
+    
+    #eclipse{
+      width: 2.3rem;
+      margin: -2.3rem 0rem 0rem 5.5rem;
+    }
+
+    #github2{
+      width: 2.4rem;
+      margin: -2.5rem 0rem 0rem 10.5rem;
+    }
+
+    #wamp{
+      width: 2.5rem;
+      margin: -2.4rem 0rem 0rem 15.5rem;
+    }
+
+    #postman{
+      width: 3rem;
+      margin: -2.7rem 0rem 0rem 20.5rem;
+    }
+
+    #cu, #cr, #co{
+      margin: 5rem 0rem 0rem 7rem;
+      text-align: left;
+    }
+
+    #cupara, #crpara, #copara{
+      margin: 2rem 0rem 0rem 10rem;
+      text-align: left;
+    }
+
+    #graph{
+      margin-left: 7rem;
+    }
+
+    #timedisplay{
+      width: 28rem;
+      margin-left: 11.5rem;
+    }
+
+    #html2{
+      margin-left: 15rem;
+    }
+
+    #css2{
+      margin-left: 24.5rem;
+    }
+
+    #javascript3{
+      margin-left: 33rem;
+    }
+
+    #francemontagne{
+      width: 29.5rem;
+      margin-left: 11.5rem;
+    }
+
+    #html3{
+      margin: 2.5rem 0rem 0rem 15rem;
+    }
+
+    #css3{
+      margin: -3.4rem 0rem 0rem 24.5rem;
+    }
+
+    #php3{
+      margin: -2.3rem 0rem 0rem 33rem;
+    }
+
+    #gmail{
+      width: 28rem;
+      margin-left: 11.5rem;
+    }
+
+    #html4{
+      margin: 2.5rem 0rem 0rem 14rem;
+    }
+
+    #css4{
+      margin: -3.4rem 0rem 0rem 22rem;
+    }
+
+    #javascript4{
+      margin: -2.6rem 0rem 0rem 28rem;
+    }
+
+    #php4{
+      margin: -2rem 0rem 0rem 34rem;
+    }
+
+    #interfaceadmin{
+      width: 28rem;
+      margin-left: 11.5rem;
+    }
+
+    #html5{
+      margin: 2.5rem 0rem 0rem 14rem;
+    }
+
+    #css5{
+      margin: -3.4rem 0rem 0rem 22rem;
+    }
+
+    #php5{
+      margin: -2.4rem 0rem 0rem 28rem;
+    }
+
+    #mysql2{
+      margin: -2.4rem 0rem 0rem 34rem;
+    }
+
+    #gestionpersonnel{
+      width: 28rem;
+      margin-left: 11.5rem;
+    }
+
+    #java2{
+      margin: 1rem 0rem 0rem 24rem;
+    }
+    
+    #tipcalculator{
+      width: 28rem;
+      margin-left: 11.5rem;
+    }
+
+    #html6{
+      margin-left: 15rem;
+    }
+
+    #css6{
+      margin-left: 24.5rem;
+    }
+
+    #javascript5{
+      margin-left: 33rem;
+    }
+
+    #allprojects{
+      margin-left: 22rem;
+    }
+
+    #contact{
+      margin: 9rem 0rem 0rem 3rem;
+    }
+
+    #name{
+      width: 20rem;
+      margin: 2rem 0rem 0rem 3rem;
+      outline: none;
+    }
+
+    #email{
+      width: 20rem;
+      margin: 2rem 0rem 0rem 3rem;
+      outline: none;
+    }
+
+    #message{
+      width: 20rem;
+      margin: 2rem 0rem 0rem 3rem;
+      outline: none;
+    }
+  
+    #button{
+      margin-left: 8.5rem;
+    }
+
+    #arrow{
+      margin: -3rem 0rem 0rem 48.5rem;
+    }
+
+    #teme{
+      display: flex;
+      position: absolute;
+      font-size: 1.2rem;
+      margin: -23rem 0rem 0rem 30rem;
+    }
+
+    #info{
+      margin: -20rem 0rem 0rem 30rem;
+      font-size: 1.4rem;
+    }
+
+    #logo{
+      display: flex;
+      position: absolute;
+      width: 10rem;
+      height: 9rem;
+      margin: 3.3rem 0rem 0rem 40rem;
+    }
+
+    #love{
+      margin: 25rem 0rem 0rem 18rem;
+    }
+
+    #title2{
+      display: flex;
+      margin: -3.2rem 0rem 0rem 3rem;
+    }
+
+    #linkedin2{
+      position: absolute;
+      margin: 24.5rem 0rem 0rem 38rem;
+    }
+
+    #github3{
+      position: absolute;
+      margin: 24.5rem 0rem 0rem 41rem;
+    }
+
+    #homenav, #aboutnav, #cccnav, #projectnav, #contactnav{
+      display: flex;
+      position: absolute;
+    }
+
+    #homenav{
+      margin: 3rem 0rem 0rem 30rem;
+    }
+
+    #aboutnav{
+      margin: 5rem 0rem 0rem 30rem;
+    }
+
+    #cccnav{
+      margin: 7rem 0rem 0rem 30rem;
+    }
+
+    #projectnav{
+      margin: 9rem 0rem 0rem 30rem;
+    }
+
+    #contactnav{
+      margin: 11rem 0rem 0rem 30rem;
+    }
+
   }
 </style>
